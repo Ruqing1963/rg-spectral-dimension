@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Renormalization Group Flows of Spectral Dimensions on Hierarchical Lattices: code, data and figures"
+authors:
+  - family-names: Chen
+    given-names: Ruqing
+    affiliation: "GUT Geoservice Inc., Montreal"
+    email: ruqing@hotmail.com
+repository-code: "https://github.com/Ruqing1963/rg-spectral-dimension"
+doi: 10.5281/zenodo.23201028
+date-released: 2026-10-07
+license: MIT
+keywords:
+  - renormalization group
+  - spectral dimension
+  - percolation
+  - hierarchical lattice
+  - diamond lattice
+  - resistance exponent
+  - Einstein relation
+  - small-world networks
+  - universality
+preferred-citation:
+  type: article
+  title: "Renormalization Group Flows of Spectral Dimensions on Hierarchical Lattices: Critical Percolation, Resistance Exponents, and Transport Universality"
+  authors:
+    - family-names: Chen
+      given-names: Ruqing
+      affiliation: "GUT Geoservice Inc., Montreal"
+  year: 2026
+  doi: 10.5281/zenodo.23201028

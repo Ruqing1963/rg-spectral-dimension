@@ -1,0 +1,18 @@
+﻿[A] RG map p' = 1-(1-p^2)^2: p_c = (sqrt5-1)/2 = 0.618033988750, f(p_c) - p_c = 0.0e+00, lambda = f'(p_c) = 4 p_c^2 = 1.527864045000 (= 6 - 2 sqrt5 = 1.527864045000), nu = ln2/ln lambda = 1.6352797270
+[B] mass recursion at p_c: Lambda = 3.730288562385 (closed form 7-2sqrt5+sqrt(73-32sqrt5) = 3.730288562385), d_f = log2 Lambda = 1.8992872368 (2 d_f/(d_f+1) = 1.3102 would assume zeta = 1; see below)
+    population dynamics (400000 per pool, 20 levels): P(connect) = 0.6179; E[M | c] exact 1.9583e+11 vs sampled 1.9570e+11; last growth ratio 3.7287 (Lambda 3.7303)
+    resistance of the spanning cluster: median R_n/2^n = 0.128, 0.112, 0.099, 0.087, 0.076 (levels 16..20); E[log2 R | c] increments (last 8 levels) give zeta = 0.8127 +- 0.0002
+    Einstein relation for the full pole cluster: d_s = 2 theta/(theta + zeta) = 1.4007
+[C] DHL heat kernels; d_s(tau) = -2 dln<P>/dln tau averaged in ln tau over two periods, 5.0 <= tau <= 215 (period factor 6.552):
+          intact DHL (p = 1): mean cluster size   2732.0, annealed <d_s> = 1.8595 (range [1.433, 2.177]), quenched <d_s> = 1.8595
+      p_c, spanning clusters: mean cluster size   1791.0, annealed <d_s> = 1.4123 (range [1.325, 1.511]), quenched <d_s> = 1.4136
+    intact DHL, generation 7: mean cluster size  10924.0, annealed <d_s> = 1.9939 (range [1.854, 2.193]), quenched <d_s> = 1.9939
+           p_c, generation 7: mean cluster size   6567.3, annealed <d_s> = 1.4383 (range [1.384, 1.519]), quenched <d_s> = 1.4386
+              p = p_c + 0.08: mean cluster size   2364.2, annealed <d_s> = 1.5978 (range [1.589, 1.612]), quenched <d_s> = 1.5994
+              p = p_c - 0.08: mean cluster size    224.6, annealed <d_s> = 1.2213 (range [0.778, 1.488]), quenched <d_s> = 1.2269
+[D] Newman-Watts ring, N = 2000: maximum of d_s(tau) = 2 tau <lambda>_tau
+    shortcut density phi = 0.0   : xi = 1/phi =    inf, max d_s = 1.218 at tau = 0.864
+    shortcut density phi = 0.002 : xi = 1/phi =  500.0, max d_s = 1.381 at tau = 1.85e+04
+    shortcut density phi = 0.01  : xi = 1/phi =  100.0, max d_s = 1.791 at tau = 3.88e+03
+    shortcut density phi = 0.05  : xi = 1/phi =   20.0, max d_s = 2.867 at tau = 362
+figures written to figures/, data to data/
